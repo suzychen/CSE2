@@ -14,7 +14,7 @@ public class WelcomeClass{
 //  add main method
     public static void main(String[] args) {
         
-//  print the welcome message with a box around it
+//  print the welcome message
     System.out.println("   -----------   ");
     System.out.println("   | WELCOME |   ");
     System.out.println("   -----------   ");
