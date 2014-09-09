@@ -39,15 +39,15 @@ public class Arithmetic{
         
         totalSockCost$=nSocks*sockCost$;
         sockTax$=((int)(nSocks*sockCost$*taxPercent*100))/100.0;
-        
+        //above gives the total cost and total tax of socks purchased
         
         totalGlassCost$=nGlasses*glassCost$;
         glassTax$=((int)(nGlasses*glassCost$*taxPercent*100))/100.0;
-        
+        //above gives the total cost and total tex of sunglasses purchased
         
         totalEnvelopCost$=nEnvelopes*envelopeCost$;
         envelopTax$=((int)(nEnvelopes*envelopeCost$*taxPercent*100))/100.0;
-        
+        //above gives the total cost and total tax of envelops purchased
         
         totalCostBeforeTax=totalSockCost$+totalGlassCost$+totalEnvelopCost$;
         totalTax=sockTax$+glassTax$+envelopTax$;
