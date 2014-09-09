@@ -36,28 +36,34 @@ public class Arithmetic{
         double envelopTax$; //tax of envelop purchased
         double totalCostBeforeTax, totalTax, totalCostAfterTax; //declare total cost before tax, total taxand total cost after tax
         
-        System.out.println ("Total cost of socks is "+
-            nSocks*sockCost$+"dollars and"+" the tax of socks is "+
-            nSocks*sockCost$*taxPercent+" dollars.");
-        System.out.println ("Total cost of sunglasses is "+
-            nGlasses*glassCost$+"dollars and"+" the tax of sunglasses is "+
-            nGlasses*glassCost$*taxPercent+" dollars.");
-        System.out.println ("Total cost of envelop is "+
-            nEnvelopes*envelopeCost$+"dollars and"+" the tax of the box of envelops is "+
-            nEnvelopes*envelopeCost$*taxPercent+" dollars.");
-        
-        //above gives the seperate cost and tax of each item purchased
         
         totalSockCost$=nSocks*sockCost$;
-        sockTax$=nSocks*sockCost$*taxPercent;
+        sockTax$=((int)(nSocks*sockCost$*taxPercent*100))/100.0;
+        
+        
         totalGlassCost$=nGlasses*glassCost$;
-        glassTax$=nGlasses*glassCost$*taxPercent;
+        glassTax$=((int)(nGlasses*glassCost$*taxPercent*100))/100.0;
+        
+        
         totalEnvelopCost$=nEnvelopes*envelopeCost$;
-        envelopTax$=nEnvelopes*envelopeCost$*taxPercent;
+        envelopTax$=((int)(nEnvelopes*envelopeCost$*taxPercent*100))/100.0;
+        
         
         totalCostBeforeTax=totalSockCost$+totalGlassCost$+totalEnvelopCost$;
         totalTax=sockTax$+glassTax$+envelopTax$;
         totalCostAfterTax=totalCostBeforeTax+totalTax;
+        //above gives the total cost before tax, the total tax and the total cost after tax
+        
+        
+        System.out.println ("Total cost of socks is "+
+            totalSockCost$+" dollars and"+" the tax of socks is "+
+            sockTax$+" dollars.");
+        System.out.println ("Total cost of sunglasses is "+
+            nGlasses*glassCost$+" dollars and"+" the tax of sunglasses is "+
+            glassTax$+" dollars.");
+        System.out.println ("Total cost of envelop is "+
+            nEnvelopes*envelopeCost$+" dollars and"+" the tax of the box of envelops is "+
+            envelopTax$+" dollars.");
         
         System.out.println ("The total cost before tax is "+
         totalCostBeforeTax+" dollars.");
