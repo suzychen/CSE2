@@ -43,7 +43,7 @@ public class Arithmetic{
         
         totalGlassCost$=nGlasses*glassCost$;
         glassTax$=((int)(nGlasses*glassCost$*taxPercent*100))/100.0;
-        //above gives the total cost and total tex of sunglasses purchased
+        //above gives the total cost and total tax of sunglasses purchased
         
         totalEnvelopCost$=nEnvelopes*envelopeCost$;
         envelopTax$=((int)(nEnvelopes*envelopeCost$*taxPercent*100))/100.0;
