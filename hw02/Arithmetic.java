@@ -27,27 +27,24 @@ public class Arithmetic{
         int nEnvelopes=1;
         //cost per box of envelopes
         double envelopeCost$=3.25;
-        double taxPercent=0.06;
-        double totalSockCost$; //total cost of socks
-        double sockTax$; //tax of socks purchased
-        double totalGlassCost$; //total cost of glass
-        double glassTax$; //tax of glass purchased
-        double totalEnvelopCost$; //total cost of envelop
-        double envelopTax$; //tax of envelop purchased
+        double taxPercent=0.06; //declare the value of tax rate in Pennsylvania
+        double totalSockCost$; //declare the value of total cost of socks before tax
+        double sockTax$; //declare the value of tax of socks purchased
+        double totalGlassCost$; //declare the value of total cost of glass before tax
+        double glassTax$; //declare the value of tax of glass purchased
+        double totalEnvelopCost$; //declare the value of total cost of envelop before tax
+        double envelopTax$; //declare the value of tax of envelop purchased
         double totalCostBeforeTax, totalTax, totalCostAfterTax; //declare total cost before tax, total taxand total cost after tax
         
         
-        totalSockCost$=nSocks*sockCost$;
-        sockTax$=((int)(nSocks*sockCost$*taxPercent*100))/100.0;
-        //above gives the total cost and total tax of socks purchased
+        totalSockCost$=nSocks*sockCost$; //calculate the total cost of socks
+        sockTax$=((int)(nSocks*sockCost$*taxPercent*100))/100.0; //calculate the tax of socks purchased
         
-        totalGlassCost$=nGlasses*glassCost$;
-        glassTax$=((int)(nGlasses*glassCost$*taxPercent*100))/100.0;
-        //above gives the total cost and total tax of sunglasses purchased
+        totalGlassCost$=nGlasses*glassCost$; //calculate the total cost of sunglasses
+        glassTax$=((int)(nGlasses*glassCost$*taxPercent*100))/100.0; //calculate the tax of sunglasses purchased
         
-        totalEnvelopCost$=nEnvelopes*envelopeCost$;
-        envelopTax$=((int)(nEnvelopes*envelopeCost$*taxPercent*100))/100.0;
-        //above gives the total cost and total tax of envelops purchased
+        totalEnvelopCost$=nEnvelopes*envelopeCost$; //calculate the total cost of envelops 
+        envelopTax$=((int)(nEnvelopes*envelopeCost$*taxPercent*100))/100.0; //calculate the tax of envelops purchased
         
         totalCostBeforeTax=totalSockCost$+totalGlassCost$+totalEnvelopCost$;
         totalTax=sockTax$+glassTax$+envelopTax$;
@@ -66,10 +63,12 @@ public class Arithmetic{
             envelopTax$+" dollars.");
         
         System.out.println ("The total cost before tax is "+
-        totalCostBeforeTax+" dollars.");
+            totalCostBeforeTax+" dollars.");
         System.out.println ("The total tax is "+
-        totalTax+" dollars.");
+            totalTax+" dollars.");
         System.out.println ("The total cost after tax is "+
-        totalCostAfterTax+" dollars.");
+            totalCostAfterTax+" dollars.");
+        
+        //test/testtest
     }
 }
