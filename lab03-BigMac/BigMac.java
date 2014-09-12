@@ -2,7 +2,8 @@
 //Zijia Chen
 //zic217
 //BigMac Java Program
-//This program calculates the cost of buying some Big Macs
+//This program realizes that after customers input the number of Big Mac they purchased,
+//the cost of Big Mac and the tax rate, the programs calculates the whole cost after tax
 //
 //  first compile the program
 //      javac BigMac.java
