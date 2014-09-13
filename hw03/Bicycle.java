@@ -14,7 +14,7 @@
 
 //  define a class
 public class Bicycle{
-    //main method required for every Java program
+    //my main method
     public static void main (String[] args) {
         Scanner myScanner;
         myScanner=new Scanner (System.in);
