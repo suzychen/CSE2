@@ -40,7 +40,7 @@ public class Bicycle{
         //the diameter in inches times PI)
         //and then convert the distance in mile
         double distanceOriginal=(counts*wheelDiameter*PI)/inchesPerFoot/feetPerMile;
-        //above gives the original value of distance which has more digits for
+        //above gives the original value of distance which has more digits
         //for the calculation for average mph
         double time=secs/secondsPerMinute; //convert time in minutes
         double averageMph=((int)((distanceOriginal*100)/(time/60)))/100.0;
