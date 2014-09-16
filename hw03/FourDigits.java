@@ -28,7 +28,7 @@ public class FourDigits{
         int number3=number2*10000; //multiply the integer by 10000
         int lastDigit=number1%10; //to get additional digit, divided by 10 and get the remaining digit
         int lastSecondDigit=number1/10%10;
-        //repeat the previous step,divided by 10 and repeat
+        //divided by 10 and repeat
         //to get the last second digit, which is the remaining number
         int lastThirdDigit=number1/100%10;
         //divide the number by 100
@@ -40,7 +40,7 @@ public class FourDigits{
         
         System.out.print(
             "The four digits are: "+lastFourthDigit+lastThirdDigit+lastSecondDigit+lastDigit);
-            
+            //above individually prints out the four digits
         //test/testtest
     }
 }
