@@ -17,7 +17,7 @@ public class Root {
     //my main method
     public static void main (String[] args) {
         Scanner myScanner;
-        myScanner=new Scanner (System.in);
+        myScanner=new Scanner (System.in); //allow next input to enter
         System.out.print(
             "Enter a double, and I print out its cube root: "); //prompt out the user to print a double
             double number=myScanner.nextDouble();
@@ -35,9 +35,9 @@ public class Root {
         //coding the substition
         
         System.out.print(
-            "The cube root is "+guess6+" :");
+            "The cube root is "+guess6+".");
         System.out.print(
-            "Cube of the crude guess is "+guess6*guess6*guess6);
+            " Cube of the crude guess is "+guess6*guess6*guess6);
         
     }
 }
