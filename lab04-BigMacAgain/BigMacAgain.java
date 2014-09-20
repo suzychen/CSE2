@@ -16,19 +16,19 @@ public class BigMacAgain{
     public static void main (String[] args) {
         Scanner myScanner;
         myScanner=new Scanner (System.in);
-        System.out.println(
+        System.out.print(
             "Enter the number of Big Macs: "); //prompt the user to enter the number of Big mac they want
         int bigMac=myScanner.nextInt();
         double bigMacCost$;
         double totalCost$;
-        bigMacCost$=2.22*bigMac;
-        totalCost$=bigMacCost$+2.15;
+        bigMacCost$=(int)(2.22*bigMac*100)/100.0;
+        totalCost$=(int)((bigMacCost$+2.15)*100)/100.0;
         
         if (myScanner.hasNextInt())
-        {   int number=myScanner.nextInt();
-            bigMac=number;
+        {   int num=myScanner.nextInt();
             if (bigMac >= 0 ) 
             {
+            
             System.out.println("You ordered "+bigMac+" Big Macs for a cost of "+bigMacCost$+" dollars");
         }
             else{
@@ -41,13 +41,13 @@ public class BigMacAgain{
         
         System.out.print("Do you want an order of fries (Y/y/N/n)?");
         String fries=myScanner.next();
-        if (fries.equals("Y") && fries.equals("y")){
+        if (fries.equals("Y") || fries.equals("y")){
             System.out.println("You ordered fries at a cost of 2.15 dollars.");
-            System.out.println("The total cost of the meal is "+totalCost$);
+            System.out.println("The total cost of the meal is "+totalCost$+" dollars");
         }
-        else if (fries.equals("N") && fries.equals("n")){
-           bigMacCost$=2.22*bigMac;
-            System.out.println("The total cost of the meal is "+bigMacCost$);
+        else if (fries.equals("N") || fries.equals("n")){
+           bigMacCost$=(int)(2.22*bigMac*100)/100.0;
+            System.out.println("The total cost of the meal is "+bigMacCost$+" dollars");
         }
         else {
             System.out.println("Your input cannot be recognized.");
