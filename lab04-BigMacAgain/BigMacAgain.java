@@ -18,17 +18,14 @@ public class BigMacAgain{
         myScanner=new Scanner (System.in);
         System.out.print(
             "Enter the number of Big Macs: "); //prompt the user to enter the number of Big mac they want
-        int bigMac=myScanner.nextInt();
         double bigMacCost$;
         double totalCost$;
         bigMacCost$=(int)(2.22*bigMac*100)/100.0;
         totalCost$=(int)((bigMacCost$+2.15)*100)/100.0;
         
         if (myScanner.hasNextInt())
-        {   int num=myScanner.nextInt();
-            if (bigMac >= 0 ) 
-            {
-            
+        {   int bigMac=myScanner.nextInt();
+            if (bigMac >= 0 ) {
             System.out.println("You ordered "+bigMac+" Big Macs for a cost of "+bigMacCost$+" dollars");
         }
             else{
