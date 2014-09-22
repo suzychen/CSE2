@@ -25,29 +25,39 @@ public class IncomeTax{
         //comput tax
         double tax=0;
         
+        //set the condition that if the next input is a integer
         if (myScanner.hasNextInt()){
-            int income=myScanner.nextInt(); //declare the input a int
+            int income=myScanner.nextInt(); //get the input from scanner and declare the input a int
+            //set the condition that if the income entered is not a postive number
             if (income < 0){
                  System.out.println("You did not enter a positive integer.");//prompt the user that the input is not a positive integer
             }
+            //set the condition that if income is less than 20 thousands
             else if(income < 20){
                 tax=income*1000*0.05; //compute the tax when tax rate is 0.05
+                 //print out tax rate and tax
                 System.out.println("The tax rate on $"+income*1000+" is 5% and the tax is $ "+(int)(tax*100)/100.0);
-            } ////print out tax rate and tax
+            }
+            //set the condidion that if income is less than 40 thousands
             else if (income < 40){
                 tax=income*1000*0.07; //compute the tax when tax rate is 0.07
+                //print out tax rate and tax
                 System.out.println("The tax rate on $"+income*1000+" is 7% and the tax is $ "+(int)(tax*100)/100.0);
-            } //print out tax rate and tax
+            } 
+            //set the condition that if income is less than 78
             else if (income < 78){
                 tax=income*1000*0.12; //compute the tax when tax rate is 0.12
+                //print out tax rate and tax
                 System.out.println("The tax rate on $"+income*1000+" is 12% and the tax is $ "+(int)(tax*100)/100);
             }
+            //set the condition that if none of the conditions above is satisfied
             else {
                 tax=income*1000*0.14;  //compute the tax when tax rate is 0.14
                 System.out.println("The tax rate on $"+income*1000+" is 14% and the tax is $ "+(int)(tax*100)/100);
             }//print out tax rate and tax
         
         }
+        //the condition that the input is not an integer
         else{
             System.out.println("You did not enter an integer."); //prompt the user that the input is not an integer
             return; 
