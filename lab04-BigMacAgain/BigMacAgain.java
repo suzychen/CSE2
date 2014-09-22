@@ -17,15 +17,19 @@ public class BigMacAgain{
         Scanner myScanner;
         myScanner=new Scanner (System.in);
         System.out.print(
-            "Enter the number of Big Macs: "); //prompt the user to enter the number of Big mac they want
+            "Enter the number of Big Macs: ");
+             System.out.println("====test print");//prompt the user to enter the number of Big mac they want
         double bigMacCost$;
         double totalCost$;
-        bigMacCost$=(int)(2.22*bigMac*100)/100.0;
-        totalCost$=(int)((bigMacCost$+2.15)*100)/100.0;
+        int bigMac;
+        //bigMacCost$=(int)(2.22*bigMac*100)/100.0;
+        //totalCost$=(int)((bigMacCost$+2.15)*100)/100.0;
         
         if (myScanner.hasNextInt())
-        {   int bigMac=myScanner.nextInt();
+        {   bigMac=myScanner.nextInt();
             if (bigMac >= 0 ) {
+                bigMacCost$=(int)(2.22*bigMac*100)/100.0;
+                totalCost$=(int)((bigMacCost$+2.15)*100)/100.0;
             System.out.println("You ordered "+bigMac+" Big Macs for a cost of "+bigMacCost$+" dollars");
         }
             else{
