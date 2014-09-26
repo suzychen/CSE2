@@ -18,7 +18,6 @@ public class BigMacAgain{
         myScanner=new Scanner (System.in);
         System.out.print(
             "Enter the number of Big Macs: ");
-             System.out.println("====test print");//prompt the user to enter the number of Big mac they want
         double bigMacCost$;
         double totalCost$;
         int bigMac;

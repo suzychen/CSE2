@@ -1,0 +1,24 @@
+
+////////////////////////////////////////////////////////////////////////////////
+//Zijia Chen
+//zic217
+//RandomGames Java Program
+//This program prompts users to enter one of three choices for a game of chance
+//(1) Roulette; (2) Craps; or (3) Picking a card from a deck of plaing cards. Then
+//the program will print the results of a play at the game chosen.
+
+//  first compile the program
+//      javac RandomGames.java
+//  run the program
+//      java RandomGames
+    import java.util.Scanner;
+
+//define a class
+public class RandomGames{
+    //my method
+    public static void main (String[] args) {
+        Scanner myScanner;
+        myScanner=new Scanner (System.in);
+        //roulette outcome is an int between 0 and 37
+        int rouletteOutcome=(int)((Math.random()*37)+1); 
+        String craps1=(int)(Math.random())+(int)(Math.random();
