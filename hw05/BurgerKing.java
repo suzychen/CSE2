@@ -91,7 +91,7 @@ public class BurgerKing {
                         //print out the order
                         System.out.println("You ordered a Mountain Dew.");
                     }
-                    //the condition that the user did not input any of (A or a), (S or s), (C or c) or (M or m)                    else {
+                    //the condition that the user did not input any of (A or a), (S or s), (C or c) or (M or m) 
                         //prompt the user the the input is not legitimate
                     else {    
                         System.out.println("Your input is not legitimate.");
