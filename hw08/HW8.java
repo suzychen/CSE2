@@ -8,6 +8,7 @@
 //and then print out the number chosen.
 //
 //
+//
 //first compile the program
 //  javac hw08.java
 //run the program
