@@ -5,6 +5,7 @@
 //to print out number stacks
 //
 //
+//
 //first compile the program
 //  javac BlockedAgain.java
 //run the program
