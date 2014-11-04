@@ -4,7 +4,6 @@
 //This program call methods in main method and call subsubmethods in submethod
 //to print out number stacks
 //
-//
 //first compile the program
 //  javac BlockedAgain.java
 //run the program
