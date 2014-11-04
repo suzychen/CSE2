@@ -25,6 +25,14 @@ public class HelloWorld{
     System.out.println("########################");
     System.out.println("test");
     
+    int num=(int)(Math.random()*100+1);
+    System.out.println(num);
+    System.out.println(1+2);
+    
+    int counter=(int)(27.5/35)+(17/5*2);
+    String message="sum:"+counter+(double)2;
+    double answer=1/2+3*4+5%6;
+    System.out.println(answer);
     //test/testtest
     }
 }
