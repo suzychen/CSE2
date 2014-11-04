@@ -126,7 +126,6 @@ public class BlockedAgain{
             for (int l=0; l<2*i-1;l++){
                 System.out.print("-");//print out hyphens
             }
-            //System.out.print("\n");//start a new line
             
         
         
