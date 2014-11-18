@@ -14,7 +14,7 @@ public class LoopTheLoop{
         //System.out.print("Enter an int between 1 and 15- ");
         int nStar=-1;
         while (nStar < 1 || nStar > 15) {
-            System.out.print("Enter an int between 1 and 15(1) - ");
+            System.out.print("Enter an int between 1 and 15 - ");
             //nStar=myScanner.nextInt();
         
 
@@ -24,7 +24,7 @@ public class LoopTheLoop{
                     break;
                 }
                 else{
-                    System.out.println("Enter an int between 1 and 15(2)- ");
+                    System.out.println("Enter an int between 1 and 15- ");
                     nStar=myScanner.nextInt();
                     break;
                 }
