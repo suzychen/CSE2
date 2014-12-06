@@ -41,13 +41,7 @@ public class PokerOdds{
         //create a generate for random number
         Random number=new Random();
         //create an array hand
-        int[] hand=new int[5];
-        //set five value in to the array
-        hand[0]=-1;
-        hand[1]=-1;
-        hand[2]=-1;
-        hand[3]=-1;
-        hand[4]=-1;
+        int[] hand={-1,-1,-1,-1,-1};
         //create an array whuich contains 52 values
         int[] deck=new int[52];
         //create a for loop for giving value to array deck[]
@@ -146,9 +140,43 @@ public class PokerOdds{
         //check if there is only exactly one duplicate in the array by using if-loop
         if (FindDuplicates.exactlyOneDup(Rank)){
           //create for-loop for check the five values
-          for(int i=1;i<5;i++){
+          for(int i=0;i<5;i++){
             //check one-by-one
-            if(Rank[i-1]==Rank[i]){
+            
+            for (int j=i+1;j<5-i;j++){
+                if(Rank[j]==Rank[i]){
+                switch (Rank[i]){
+                  case 0:ace+=1;
+                    break;
+                  case 1:two+=1;
+                    break;
+                  case 2:three+=1;
+                    break;
+                  case 3:four+=1;
+                    break;
+                  case 4:five+=1;
+                    break;
+                  case 5:six+=1;
+                    break;
+                  case 6:seven+=1;
+                    break;
+                  case 7:eight+=1;
+                    break;
+                  case 8:nine+=1;
+                    break;
+                  case 9:ten+=1;
+                    break;
+                  case 10:joker+=1;
+                    break;
+                  case 11:queen+=1;
+                    break;
+                  case 12:king+=1;
+                    break;
+              }//switch
+              
+              }//if
+            
+            /*if(Rank[i-1]==Rank[i]){
             switch (Rank[i]){
               case 0:ace+=1;
                 break;
@@ -177,14 +205,13 @@ public class PokerOdds{
               case 12:king+=1;
                 break;
             }
-          }
-        }
-        }
-      //if the condition is that there is no pair
-        else{
-          t+=1;
-        }
-        //imcrement by one
+          }*/
+        }//for
+        }//for
+      }
+      else{
+           t+=1;
+      }
         a++;
       }while(a<10000); //do 10000 times
       //print out the result
